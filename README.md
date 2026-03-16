@@ -1,2 +1,5 @@
 # Aulas-de-SO-1
-Conteúdo de aula.
+
+### vou adicionar algumas atividades e trabalhos aqui.
+
+
