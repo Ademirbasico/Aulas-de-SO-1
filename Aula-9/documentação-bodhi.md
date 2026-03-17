@@ -4,4 +4,4 @@
 
 Esse sistema operacional
 
-## rascunho..
+## rascunho
