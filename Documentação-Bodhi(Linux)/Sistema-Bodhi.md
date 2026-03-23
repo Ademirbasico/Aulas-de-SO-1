@@ -1,3 +1,3 @@
 ## Sistema
 
-# Este sistema tem mecanicas baseadas no linus.
+# Este sistema tem mecanicas baseadas no linux.
