@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     </head>
     <h1><tr><td>Monitor de Sistemas Operacionais</td></tr></h1>
     <h2>Sistema</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table class="table-style-1" border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Hostname</strong></td><td>${os.hostname()}</td></tr>
       <tr><td><strong>Tipo</strong></td><td>${os.type()}</td></tr>
       <tr><td><strong>Plataforma</strong></td><td>${os.platform()}</td></tr>
@@ -35,14 +35,14 @@ app.get('/', (req, res) => {
     </table>
 
     <h2>Memória</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table class="table-style-2" border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Total</strong></td><td>${memoryTotalMB} MB</td></tr>
       <tr><td><strong>Livre</strong></td><td>${memoryFreeMB} MB</td></tr>
       <tr><td><strong>Usada</strong></td><td>${memoryUsedMB} MB</td></tr>
     </table>
 
     <h2>CPU</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table class="table-style-3" border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Contagem</strong></td><td>${cpus.length}</td></tr>
       <tr><td><strong>Modelo</strong></td><td>${cpuModel}</td></tr>
       <tr><td><strong>Velocidade</strong></td><td>${cpuSpeed} MHz</td></tr>
@@ -50,14 +50,14 @@ app.get('/', (req, res) => {
     </table>
 
     <h2>Usuário</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table class="table-style-4" border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Usuário</strong></td><td>${userInfo.username}</td></tr>
       <tr><td><strong>Home</strong></td><td>${userInfo.homedir}</td></tr>
       <tr><td><strong>Pasta temporária</strong></td><td>${os.tmpdir()}</td></tr>
     </table>
 
     <h2>Node.js</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table class="table-style-5" border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Versão</strong></td><td>${process.version}</td></tr>
       <tr><td><strong>Plataforma</strong></td><td>${process.platform}</td></tr>
       <tr><td><strong>Arquitetura</strong></td><td>${process.arch}</td></tr>
