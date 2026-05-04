@@ -2,6 +2,7 @@ const express = require('express');
 const os = require('os');
 
 const app = express();
+app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
   const uptimeSeconds = os.uptime();
@@ -18,7 +19,10 @@ app.get('/', (req, res) => {
   const userInfo = os.userInfo();
 
   res.send(`
-    <h1>Monitor de Sistemas Operacionais</h1>
+    <head>
+      <link rel="stylesheet" href="/br.css">
+    </head>
+    <h1><tr><td>Monitor de Sistemas Operacionais</td></tr></h1>
     <h2>Sistema</h2>
     <table border="1" cellpadding="8" cellspacing="0">
       <tr><td><strong>Hostname</strong></td><td>${os.hostname()}</td></tr>

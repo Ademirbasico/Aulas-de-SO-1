@@ -1,3 +1,62 @@
-background-color{
-    background-color: #f0f0f0;
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  background-color: gray;
+}
+
+h2 {
+  margin-top: 24px;
+  color: #333;
+}
+
+/* Exibe todas as tabelas lado a lado */
+table {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  min-width: 260px;
+  margin: 10px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+}
+
+/* Classes de cores alternativas para modificar facilmente */
+.table-style-1 {
+  background-color: hsl(207, 73%, 46%);
+}
+
+.table-style-2 {
+  background-color: hsl(207, 73%, 46%);
+}
+
+.table-style-3 {
+  background-color: hsl(207, 73%, 46%);
+}
+
+.table-style-4 {
+  background-color: hsl(207, 73%, 46%);
+}
+
+.table-style-5 {
+  background-color: hsl(207, 73%, 46%);
+}
+
+/* Estilo de células para legibilidade */
+table.table-style-1 td,
+table.table-style-2 td,
+table.table-style-3 td,
+table.table-style-4 td,
+table.table-style-5 td {
+  background-clip: padding-box;
 }
